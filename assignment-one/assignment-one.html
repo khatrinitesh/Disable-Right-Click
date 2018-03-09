@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<table border="1" cellspacing="1" cellpadding="10"> 
+		<tr>
+			<th>Name</th>
+			<th>Location</th>
+			<th>Designation</th>
+		</tr>
+		<tr>
+			<td class="right_disable"><a href="">Nitesh Khatri</a></td>
+			<td>Malad</td>
+			<td>Front end developer</td>
+		</tr>
+	</table>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			$('.right_disable').bind("contextmenu",function(e){
+				e.preventDefault();
+				alert('Right click disabled');
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
